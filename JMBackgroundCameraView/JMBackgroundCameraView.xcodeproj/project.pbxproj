@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDD9AC619FEFA4B000368E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AC519FEFA4B000368E8 /* main.m */; };
+		BEDD9AC919FEFA4B000368E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AC819FEFA4B000368E8 /* AppDelegate.m */; };
+		BEDD9ACC19FEFA4B000368E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9ACB19FEFA4B000368E8 /* ViewController.m */; };
+		BEDD9ACF19FEFA4B000368E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDD9ACD19FEFA4B000368E8 /* Main.storyboard */; };
+		BEDD9AD119FEFA4B000368E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDD9AD019FEFA4B000368E8 /* Images.xcassets */; };
+		BEDD9AD419FEFA4B000368E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDD9AD219FEFA4B000368E8 /* LaunchScreen.xib */; };
+		BEDD9AE019FEFA4C000368E8 /* JMBackgroundCameraViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9ADF19FEFA4C000368E8 /* JMBackgroundCameraViewTests.m */; };
+		BEDD9AF019FEFAAD000368E8 /* JMBackgroundCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AEB19FEFAAD000368E8 /* JMBackgroundCameraView.m */; };
+		BEDD9AF119FEFAAD000368E8 /* UIERealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AED19FEFAAD000368E8 /* UIERealTimeBlurView.m */; };
+		BEDD9AF219FEFAAD000368E8 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AEF19FEFAAD000368E8 /* UIImage+BoxBlur.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEDD9ADA19FEFA4C000368E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDD9AB819FEFA4B000368E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDD9ABF19FEFA4B000368E8;
+			remoteInfo = JMBackgroundCameraView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEDD9AC019FEFA4B000368E8 /* JMBackgroundCameraView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JMBackgroundCameraView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDD9AC419FEFA4B000368E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDD9AC519FEFA4B000368E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEDD9AC719FEFA4B000368E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEDD9AC819FEFA4B000368E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEDD9ACA19FEFA4B000368E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEDD9ACB19FEFA4B000368E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEDD9ACE19FEFA4B000368E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEDD9AD019FEFA4B000368E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEDD9AD319FEFA4B000368E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BEDD9AD919FEFA4C000368E8 /* JMBackgroundCameraViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JMBackgroundCameraViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDD9ADE19FEFA4C000368E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDD9ADF19FEFA4C000368E8 /* JMBackgroundCameraViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraViewTests.m; sourceTree = "<group>"; };
+		BEDD9AEA19FEFAAD000368E8 /* JMBackgroundCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBackgroundCameraView.h; sourceTree = "<group>"; };
+		BEDD9AEB19FEFAAD000368E8 /* JMBackgroundCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraView.m; sourceTree = "<group>"; };
+		BEDD9AEC19FEFAAD000368E8 /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
+		BEDD9AED19FEFAAD000368E8 /* UIERealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIERealTimeBlurView.m; sourceTree = "<group>"; };
+		BEDD9AEE19FEFAAD000368E8 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		BEDD9AEF19FEFAAD000368E8 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDD9ABD19FEFA4B000368E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDD9AD619FEFA4C000368E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDD9AB719FEFA4B000368E8 = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AC219FEFA4B000368E8 /* JMBackgroundCameraView */,
+				BEDD9ADC19FEFA4C000368E8 /* JMBackgroundCameraViewTests */,
+				BEDD9AC119FEFA4B000368E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDD9AC119FEFA4B000368E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AC019FEFA4B000368E8 /* JMBackgroundCameraView.app */,
+				BEDD9AD919FEFA4C000368E8 /* JMBackgroundCameraViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDD9AC219FEFA4B000368E8 /* JMBackgroundCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AE919FEFAAD000368E8 /* JMBackgroundCameraView */,
+				BEDD9AC719FEFA4B000368E8 /* AppDelegate.h */,
+				BEDD9AC819FEFA4B000368E8 /* AppDelegate.m */,
+				BEDD9ACA19FEFA4B000368E8 /* ViewController.h */,
+				BEDD9ACB19FEFA4B000368E8 /* ViewController.m */,
+				BEDD9ACD19FEFA4B000368E8 /* Main.storyboard */,
+				BEDD9AD019FEFA4B000368E8 /* Images.xcassets */,
+				BEDD9AD219FEFA4B000368E8 /* LaunchScreen.xib */,
+				BEDD9AC319FEFA4B000368E8 /* Supporting Files */,
+			);
+			path = JMBackgroundCameraView;
+			sourceTree = "<group>";
+		};
+		BEDD9AC319FEFA4B000368E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AC419FEFA4B000368E8 /* Info.plist */,
+				BEDD9AC519FEFA4B000368E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDD9ADC19FEFA4C000368E8 /* JMBackgroundCameraViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9ADF19FEFA4C000368E8 /* JMBackgroundCameraViewTests.m */,
+				BEDD9ADD19FEFA4C000368E8 /* Supporting Files */,
+			);
+			path = JMBackgroundCameraViewTests;
+			sourceTree = "<group>";
+		};
+		BEDD9ADD19FEFA4C000368E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9ADE19FEFA4C000368E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEDD9AE919FEFAAD000368E8 /* JMBackgroundCameraView */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AEA19FEFAAD000368E8 /* JMBackgroundCameraView.h */,
+				BEDD9AEB19FEFAAD000368E8 /* JMBackgroundCameraView.m */,
+				BEDD9AF319FEFABE000368E8 /* Blur */,
+			);
+			path = JMBackgroundCameraView;
+			sourceTree = "<group>";
+		};
+		BEDD9AF319FEFABE000368E8 /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				BEDD9AEC19FEFAAD000368E8 /* UIERealTimeBlurView.h */,
+				BEDD9AED19FEFAAD000368E8 /* UIERealTimeBlurView.m */,
+				BEDD9AEE19FEFAAD000368E8 /* UIImage+BoxBlur.h */,
+				BEDD9AEF19FEFAAD000368E8 /* UIImage+BoxBlur.m */,
+			);
+			name = Blur;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDD9ABF19FEFA4B000368E8 /* JMBackgroundCameraView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDD9AE319FEFA4C000368E8 /* Build configuration list for PBXNativeTarget "JMBackgroundCameraView" */;
+			buildPhases = (
+				BEDD9ABC19FEFA4B000368E8 /* Sources */,
+				BEDD9ABD19FEFA4B000368E8 /* Frameworks */,
+				BEDD9ABE19FEFA4B000368E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JMBackgroundCameraView;
+			productName = JMBackgroundCameraView;
+			productReference = BEDD9AC019FEFA4B000368E8 /* JMBackgroundCameraView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEDD9AD819FEFA4C000368E8 /* JMBackgroundCameraViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDD9AE619FEFA4C000368E8 /* Build configuration list for PBXNativeTarget "JMBackgroundCameraViewTests" */;
+			buildPhases = (
+				BEDD9AD519FEFA4C000368E8 /* Sources */,
+				BEDD9AD619FEFA4C000368E8 /* Frameworks */,
+				BEDD9AD719FEFA4C000368E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDD9ADB19FEFA4C000368E8 /* PBXTargetDependency */,
+			);
+			name = JMBackgroundCameraViewTests;
+			productName = JMBackgroundCameraViewTests;
+			productReference = BEDD9AD919FEFA4C000368E8 /* JMBackgroundCameraViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDD9AB819FEFA4B000368E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "joan molinas ramon";
+				TargetAttributes = {
+					BEDD9ABF19FEFA4B000368E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					BEDD9AD819FEFA4C000368E8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = BEDD9ABF19FEFA4B000368E8;
+					};
+				};
+			};
+			buildConfigurationList = BEDD9ABB19FEFA4B000368E8 /* Build configuration list for PBXProject "JMBackgroundCameraView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDD9AB719FEFA4B000368E8;
+			productRefGroup = BEDD9AC119FEFA4B000368E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDD9ABF19FEFA4B000368E8 /* JMBackgroundCameraView */,
+				BEDD9AD819FEFA4C000368E8 /* JMBackgroundCameraViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDD9ABE19FEFA4B000368E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD9ACF19FEFA4B000368E8 /* Main.storyboard in Resources */,
+				BEDD9AD419FEFA4B000368E8 /* LaunchScreen.xib in Resources */,
+				BEDD9AD119FEFA4B000368E8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDD9AD719FEFA4C000368E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDD9ABC19FEFA4B000368E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD9AF219FEFAAD000368E8 /* UIImage+BoxBlur.m in Sources */,
+				BEDD9ACC19FEFA4B000368E8 /* ViewController.m in Sources */,
+				BEDD9AF119FEFAAD000368E8 /* UIERealTimeBlurView.m in Sources */,
+				BEDD9AC919FEFA4B000368E8 /* AppDelegate.m in Sources */,
+				BEDD9AF019FEFAAD000368E8 /* JMBackgroundCameraView.m in Sources */,
+				BEDD9AC619FEFA4B000368E8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDD9AD519FEFA4C000368E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD9AE019FEFA4C000368E8 /* JMBackgroundCameraViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEDD9ADB19FEFA4C000368E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDD9ABF19FEFA4B000368E8 /* JMBackgroundCameraView */;
+			targetProxy = BEDD9ADA19FEFA4C000368E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEDD9ACD19FEFA4B000368E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDD9ACE19FEFA4B000368E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEDD9AD219FEFA4B000368E8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDD9AD319FEFA4B000368E8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEDD9AE119FEFA4C000368E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEDD9AE219FEFA4C000368E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEDD9AE419FEFA4C000368E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JMBackgroundCameraView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEDD9AE519FEFA4C000368E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JMBackgroundCameraView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEDD9AE719FEFA4C000368E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JMBackgroundCameraViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMBackgroundCameraView.app/JMBackgroundCameraView";
+			};
+			name = Debug;
+		};
+		BEDD9AE819FEFA4C000368E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JMBackgroundCameraViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JMBackgroundCameraView.app/JMBackgroundCameraView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDD9ABB19FEFA4B000368E8 /* Build configuration list for PBXProject "JMBackgroundCameraView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDD9AE119FEFA4C000368E8 /* Debug */,
+				BEDD9AE219FEFA4C000368E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDD9AE319FEFA4C000368E8 /* Build configuration list for PBXNativeTarget "JMBackgroundCameraView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDD9AE419FEFA4C000368E8 /* Debug */,
+				BEDD9AE519FEFA4C000368E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEDD9AE619FEFA4C000368E8 /* Build configuration list for PBXNativeTarget "JMBackgroundCameraViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDD9AE719FEFA4C000368E8 /* Debug */,
+				BEDD9AE819FEFA4C000368E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEDD9AB819FEFA4B000368E8 /* Project object */;
+}
