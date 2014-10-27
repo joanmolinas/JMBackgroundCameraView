@@ -12,7 +12,7 @@ It's very easy.
 
 1. Define `JMBackgroundCameraView `:
 
-    @property (nonatomic, strong) JMBackgroundCameraView *v;
+   `@property (nonatomic, strong) JMBackgroundCameraView *v;`
 
 2. You can use two constructors, device position for back or front camera:
 
