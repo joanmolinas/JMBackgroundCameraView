@@ -30,7 +30,3 @@ Optimitzed for iOS7 or higher
 ##License 
 Mit License
 
-## To-Do
-. Use UIERealTimeBlurView
-
-
