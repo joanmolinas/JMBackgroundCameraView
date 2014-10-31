@@ -15,8 +15,6 @@
 		BEDD9AD419FEFA4B000368E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDD9AD219FEFA4B000368E8 /* LaunchScreen.xib */; };
 		BEDD9AE019FEFA4C000368E8 /* JMBackgroundCameraViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9ADF19FEFA4C000368E8 /* JMBackgroundCameraViewTests.m */; };
 		BEDD9AFA19FF0283000368E8 /* JMBackgroundCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AF519FF0283000368E8 /* JMBackgroundCameraView.m */; };
-		BEDD9AFB19FF0283000368E8 /* UIERealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AF719FF0283000368E8 /* UIERealTimeBlurView.m */; };
-		BEDD9AFC19FF0283000368E8 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDD9AF919FF0283000368E8 /* UIImage+BoxBlur.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,6 @@
 		BEDD9ADF19FEFA4C000368E8 /* JMBackgroundCameraViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraViewTests.m; sourceTree = "<group>"; };
 		BEDD9AF419FF0283000368E8 /* JMBackgroundCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBackgroundCameraView.h; sourceTree = "<group>"; };
 		BEDD9AF519FF0283000368E8 /* JMBackgroundCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBackgroundCameraView.m; sourceTree = "<group>"; };
-		BEDD9AF619FF0283000368E8 /* UIERealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIERealTimeBlurView.h; sourceTree = "<group>"; };
-		BEDD9AF719FF0283000368E8 /* UIERealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIERealTimeBlurView.m; sourceTree = "<group>"; };
-		BEDD9AF819FF0283000368E8 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
-		BEDD9AF919FF0283000368E8 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +86,6 @@
 			children = (
 				BEDD9AF419FF0283000368E8 /* JMBackgroundCameraView.h */,
 				BEDD9AF519FF0283000368E8 /* JMBackgroundCameraView.m */,
-				BEDD9AF619FF0283000368E8 /* UIERealTimeBlurView.h */,
-				BEDD9AF719FF0283000368E8 /* UIERealTimeBlurView.m */,
-				BEDD9AF819FF0283000368E8 /* UIImage+BoxBlur.h */,
-				BEDD9AF919FF0283000368E8 /* UIImage+BoxBlur.m */,
 				BEDD9AC719FEFA4B000368E8 /* AppDelegate.h */,
 				BEDD9AC819FEFA4B000368E8 /* AppDelegate.m */,
 				BEDD9ACA19FEFA4B000368E8 /* ViewController.h */,
@@ -234,9 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDD9AFC19FF0283000368E8 /* UIImage+BoxBlur.m in Sources */,
 				BEDD9ACC19FEFA4B000368E8 /* ViewController.m in Sources */,
-				BEDD9AFB19FF0283000368E8 /* UIERealTimeBlurView.m in Sources */,
 				BEDD9AC919FEFA4B000368E8 /* AppDelegate.m in Sources */,
 				BEDD9AFA19FF0283000368E8 /* JMBackgroundCameraView.m in Sources */,
 				BEDD9AC619FEFA4B000368E8 /* main.m in Sources */,
@@ -430,6 +418,7 @@
 				BEDD9AE519FEFA4C000368E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEDD9AE619FEFA4C000368E8 /* Build configuration list for PBXNativeTarget "JMBackgroundCameraViewTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +427,7 @@
 				BEDD9AE819FEFA4C000368E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

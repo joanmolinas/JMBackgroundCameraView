@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "UIERealTimeBlurView.h"
 
 typedef NS_ENUM(NSInteger, DevicePositon) {
     DevicePositonFront,
@@ -21,11 +20,10 @@ typedef NS_ENUM(NSInteger, DevicePositon) {
 @property (nonatomic, retain) AVCaptureDevice *device;
 @property (nonatomic, retain) AVCaptureStillImageOutput *imageOutput;
 @property (nonatomic, retain) AVCaptureVideoPreviewLayer *preview;
-@property (nonatomic, strong) UIERealTimeBlurView* blurLayer;
 
 
--(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur;
+-(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(UIBlurEffectStyle)blur;
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position;
 -(void)removeBlurEffect;
--(void)addBlurEffect;
+-(void)addBlurEffect:(UIBlurEffectStyle)style;
 @end

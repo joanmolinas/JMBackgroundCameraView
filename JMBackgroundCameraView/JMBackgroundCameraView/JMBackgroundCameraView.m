@@ -10,12 +10,12 @@
 
 
 @implementation JMBackgroundCameraView {
-    UIERealTimeBlurView *blurView;
+    UIVisualEffectView *blurEffectView;
 }
--(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur {
+-(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(UIBlurEffectStyle)blur {
     if (self = [super initWithFrame:frame]) {
         [self initCameraInPosition:position];
-        [self addBlurEffect];
+        [self addBlurEffect:blur];
     }
     return self;
 }
@@ -65,11 +65,16 @@
 
 }
 -(void)removeBlurEffect {
-    [blurView removeFromSuperview];
+    [blurEffectView removeFromSuperview];
 }
--(void)addBlurEffect {
-    blurView = [[UIERealTimeBlurView alloc] initWithFrame:self.frame];
-    [self insertSubview:blurView atIndex:1];
+-(void)addBlurEffect:(UIBlurEffectStyle)style {
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:style];
+    
+    
+    blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
+    blurEffectView.frame = self.bounds;
+    
+    [self insertSubview:blurEffectView atIndex:1];
 }
 
 @end
