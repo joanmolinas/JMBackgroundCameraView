@@ -30,7 +30,8 @@ Optimitzed for iOS7 or higher
 ##License 
 Mit License
 
-## To-Do
-. Use UIERealTimeBlurView
+##Contact
+joanmramon@gmail.com
 
+http://joanmolinas.com
 
