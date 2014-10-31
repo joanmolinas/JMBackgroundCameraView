@@ -31,7 +31,7 @@ It's very easy.
 3. Just need add view `addSubview`
 
 ##Requeriments
-Optimitzed for iOS7 or higher
+Required iOS8 for Blur.
 
 ##License 
 Mit License
