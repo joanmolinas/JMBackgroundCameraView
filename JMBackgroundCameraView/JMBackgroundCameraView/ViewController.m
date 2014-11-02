@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     v = [[JMBackgroundCameraView alloc] initWithFrame:self.view.frame positionDevice:DevicePositonFront blur:UIBlurEffectStyleDark];
+     v = [[JMBackgroundCameraView alloc] initWithFrame:self.view.frame positionDevice:DevicePositonBack blur:UIBlurEffectStyleDark];
     [self.view addSubview:v];
     
     UISwitch *s = [[UISwitch alloc]initWithFrame:CGRectMake(0, 100, 100, 40)];

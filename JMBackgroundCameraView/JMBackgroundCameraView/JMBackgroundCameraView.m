@@ -70,7 +70,6 @@
 -(void)addBlurEffect:(UIBlurEffectStyle)style {
     UIBlurEffect *blur = [UIBlurEffect effectWithStyle:style];
     
-    
     blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blur];
     blurEffectView.frame = self.bounds;
     
