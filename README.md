@@ -16,7 +16,13 @@ It's very easy.
 
 2. You can use two constructors, device position for back or front camera:
 
-    `-(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur;`
+    `-(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(UIBlurEffectStyle)blur;`
+      
+      · UIBlurEffectStyleDark
+      
+      · UIBlurEffectStyleLight
+      
+      · UIBlurEffectStyleExtraLight
     
     or:
 
@@ -25,7 +31,7 @@ It's very easy.
 3. Just need add view `addSubview`
 
 ##Requeriments
-Optimitzed for iOS7 or higher
+Required iOS8 for Blur.
 
 ##License 
 Mit License
