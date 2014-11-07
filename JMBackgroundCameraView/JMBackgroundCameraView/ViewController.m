@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     v = [[JMBackgroundCameraView alloc] initWithFrame:self.view.frame positionDevice:DevicePositonFront blur:YES];
-    [self.view addSubview:v];
+     v = [[JMBackgroundCameraView alloc] initWithFrame:self.view.frame positionDevice:DevicePositonBack blur:YES];
+    [self.view addSubview:v]; 
     
     UISwitch *s = [[UISwitch alloc]initWithFrame:CGRectMake(0, 100, 100, 40)];
     [s addTarget:self action:@selector(switchState:) forControlEvents:UIControlEventTouchUpInside];
@@ -37,8 +37,15 @@
     [v addSubview:text];
     
 }
+
+
 -(void)switchState:(id)sender{
     [sender isOn] ? [v removeBlurEffect] :  [v addBlurEffect];
 }
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
+    [v changePreviewOrientation:(UIInterfaceOrientation)toInterfaceOrientation];
+}
+
 
 @end

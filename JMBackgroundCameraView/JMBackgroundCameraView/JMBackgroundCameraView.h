@@ -16,16 +16,22 @@ typedef NS_ENUM(NSInteger, DevicePositon) {
 };
 
 @interface JMBackgroundCameraView : UIView
-@property (nonatomic, retain) AVCaptureSession *session;
-@property (nonatomic, retain) AVCaptureDeviceInput *input;
-@property (nonatomic, retain) AVCaptureDevice *device;
-@property (nonatomic, retain) AVCaptureStillImageOutput *imageOutput;
-@property (nonatomic, retain) AVCaptureVideoPreviewLayer *preview;
+
+@property (nonatomic, strong) AVCaptureSession *session;
+@property (nonatomic, strong) AVCaptureDeviceInput *input;
+@property (nonatomic, strong) AVCaptureDevice *device;
+@property (nonatomic, strong) AVCaptureStillImageOutput *imageOutput;
+@property (nonatomic, strong) AVCaptureVideoPreviewLayer *preview;
 @property (nonatomic, strong) UIERealTimeBlurView* blurLayer;
+
+@property (nonatomic, assign) UIInterfaceOrientation orientation;
 
 
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur;
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position;
+
+- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation;
+
 -(void)removeBlurEffect;
 -(void)addBlurEffect;
 @end

@@ -15,6 +15,7 @@
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur {
     if (self = [super initWithFrame:frame]) {
         [self initCameraInPosition:position];
+        blurView = [[UIERealTimeBlurView alloc] initWithFrame:self.frame];
         [self addBlurEffect];
     }
     return self;
@@ -54,21 +55,82 @@
     }
     
     self.imageOutput = [AVCaptureStillImageOutput new];
+    
     NSDictionary *outputSettings = @{AVVideoCodecKey:AVVideoCodecJPEG};
+    
     [self.imageOutput setOutputSettings:outputSettings];
     [self.session addOutput:self.imageOutput];
+    
     self.preview = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
-    [self.preview setVideoGravity:AVLayerVideoGravityResizeAspectFill];
     [self.preview setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    [self.preview setVideoGravity:AVLayerVideoGravityResizeAspectFill];
     [self.layer addSublayer:self.preview];
+    
     [self.session startRunning];
+    
+    
 
 }
+
+
+- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    if (!self.preview) {
+        return;
+    }
+    [UIView animateWithDuration:.23 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        if (interfaceOrientation == UIInterfaceOrientationLandscapeRight || interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+            [self.preview setFrame:CGRectMake(0, 0, self.frame.size.height, self.frame.size.width)];
+            
+            if (blurView) {
+                [blurView setFrame:CGRectMake(0, 0,  self.frame.size.height, self.frame.size.width)];
+            }
+        }else{
+            [self.preview setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+           
+            if (blurView) {
+                [blurView setFrame:CGRectMake(0, 0,  self.frame.size.width, self.frame.size.height)];
+            }
+        }
+        [self previewOrientation:interfaceOrientation];
+    } completion:NULL];
+}
+
+- (void)previewOrientation:(UIInterfaceOrientation)interfaceOrientation{
+    
+    [CATransaction begin];
+    
+    self.orientation = interfaceOrientation;
+    
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        self.preview.connection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
+        
+    }else if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft){
+        self.preview.connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
+        
+    }else if (interfaceOrientation == UIDeviceOrientationPortrait){
+        self.preview.connection.videoOrientation = AVCaptureVideoOrientationPortrait;
+        
+    }else if (interfaceOrientation == UIDeviceOrientationPortraitUpsideDown){
+        self.preview.connection.videoOrientation = AVCaptureVideoOrientationPortraitUpsideDown;
+    }
+    
+    [CATransaction commit];
+}
+
 -(void)removeBlurEffect {
     [blurView removeFromSuperview];
+    blurView = nil;
 }
+
 -(void)addBlurEffect {
-    blurView = [[UIERealTimeBlurView alloc] initWithFrame:self.frame];
+    if (blurView == nil) {
+        if (self.orientation == UIInterfaceOrientationLandscapeRight || self.orientation == UIInterfaceOrientationLandscapeLeft) {
+            blurView = [[UIERealTimeBlurView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.height, self.frame.size.width)];
+        }else{
+            blurView = [[UIERealTimeBlurView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        }
+    }
     [self insertSubview:blurView atIndex:1];
 }
 
