@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, DevicePositon) {
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(BOOL)blur;
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position;
 
-- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation;
+- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration;
 
 -(void)removeBlurEffect;
 -(void)addBlurEffect;

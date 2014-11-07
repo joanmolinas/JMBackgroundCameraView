@@ -73,12 +73,12 @@
 }
 
 
-- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (void)changePreviewOrientation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration
 {
     if (!self.preview) {
         return;
     }
-    [UIView animateWithDuration:.23 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         if (interfaceOrientation == UIInterfaceOrientationLandscapeRight || interfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
             [self.preview setFrame:CGRectMake(0, 0, self.frame.size.height, self.frame.size.width)];
             

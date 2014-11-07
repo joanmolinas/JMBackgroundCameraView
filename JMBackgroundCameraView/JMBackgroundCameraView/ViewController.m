@@ -44,7 +44,7 @@
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
-    [v changePreviewOrientation:(UIInterfaceOrientation)toInterfaceOrientation];
+    [v changePreviewOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:duration];
 }
 
 

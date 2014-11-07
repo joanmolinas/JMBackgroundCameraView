@@ -365,7 +365,7 @@
 				INFOPLIST_FILE = JMBackgroundCameraView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "46347318-7170-4315-ad2b-13ec82f5948d";
 			};
 			name = Debug;
 		};
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = JMBackgroundCameraView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "46347318-7170-4315-ad2b-13ec82f5948d";
 			};
 			name = Release;
 		};
