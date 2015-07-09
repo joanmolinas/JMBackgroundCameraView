@@ -76,4 +76,31 @@
     [self insertSubview:blurEffectView atIndex:1];
 }
 
+-(void)capturePhotoNowWithcompletionBlock:(void (^)(UIImage *))completionBlock{
+    
+    if (self.imageOutput != nil) {
+        AVCaptureConnection *videoConnection = nil;
+        for (AVCaptureConnection *connection in self.imageOutput.connections) {
+            for (AVCaptureInputPort * port in connection.inputPorts) {
+                if ([[port mediaType] isEqual:AVMediaTypeVideo]) {
+                    videoConnection = connection;
+                    break;
+                }
+            }
+            if (videoConnection) { break; }
+        }
+        
+        [self.imageOutput captureStillImageAsynchronouslyFromConnection:videoConnection
+                                                      completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
+                                                          NSData *ImageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
+                                                          UIImage *image = [UIImage imageWithData:ImageData];
+                                                          UIImage *imageToDisplay = [UIImage imageWithCGImage:[image CGImage]
+                                                                                                        scale:1.0
+                                                                                                  orientation:UIImageOrientationLeftMirrored];
+                                                          completionBlock(imageToDisplay);
+                                                          
+                                                      }];
+    }
+}
+
 @end

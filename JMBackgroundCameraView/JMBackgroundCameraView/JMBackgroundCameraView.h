@@ -26,4 +26,5 @@ typedef NS_ENUM(NSInteger, DevicePositon) {
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position;
 -(void)removeBlurEffect;
 -(void)addBlurEffect:(UIBlurEffectStyle)style;
+-(void)capturePhotoNowWithcompletionBlock:(void(^)(UIImage *image))completionBlock;
 @end
