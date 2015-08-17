@@ -13,5 +13,5 @@ s.author = { "Joan Molinas" => "joanmramon@gmail.com" }
 s.homepage = "https://github.com/ulidev/JMBackgroundCameraView"
 s.source = { :git => "https://github.com/ulidev/JMBackgroundCameraView.git", :tag => s.version.to_s }
 s.framework = "UIKit"
-s.source_files = "JMBackgroundCameraView/*.{h,m}"
+s.source_files = "JMBackgroundCameraView/JMBackgroundCameraView/JMBackgroundCameraView.{h,m}"
 end

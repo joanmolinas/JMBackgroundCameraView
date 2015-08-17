@@ -10,8 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 
 typedef NS_ENUM(NSInteger, DevicePositon) {
-    DevicePositonFront,
-    DevicePositonBack
+    DevicePositionFront,
+    DevicePositionBack
 };
 
 @interface JMBackgroundCameraView : UIView
@@ -26,5 +26,5 @@ typedef NS_ENUM(NSInteger, DevicePositon) {
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position;
 -(void)removeBlurEffect;
 -(void)addBlurEffect:(UIBlurEffectStyle)style;
--(void)capturePhotoNowWithcompletionBlock:(void(^)(UIImage *image))completionBlock;
+-(void)capturePhotoNowWithCompletionBlock:(void(^)(UIImage *image))completionBlock;
 @end

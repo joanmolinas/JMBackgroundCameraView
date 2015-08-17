@@ -12,6 +12,12 @@
 @implementation JMBackgroundCameraView {
     UIVisualEffectView *blurEffectView;
 }
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    [self initCameraInPosition:DevicePositionFront];
+}
+
 -(instancetype)initWithFrame:(CGRect)frame positionDevice:(DevicePositon)position blur:(UIBlurEffectStyle)blur {
     if (self = [super initWithFrame:frame]) {
         [self initCameraInPosition:position];
@@ -33,7 +39,7 @@
     NSArray *devices = [NSArray new];
     devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     for (AVCaptureDevice *device in devices) {
-        if (position == DevicePositonBack) {
+        if (position == DevicePositionBack) {
             if ([device position] == AVCaptureDevicePositionBack) {
                 _device = device;
                 break;
@@ -76,8 +82,7 @@
     [self insertSubview:blurEffectView atIndex:1];
 }
 
--(void)capturePhotoNowWithcompletionBlock:(void (^)(UIImage *))completionBlock{
-    
+-(void)capturePhotoNowWithCompletionBlock:(void (^)(UIImage *image))completionBlock{
     if (self.imageOutput != nil) {
         AVCaptureConnection *videoConnection = nil;
         for (AVCaptureConnection *connection in self.imageOutput.connections) {
